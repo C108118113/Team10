@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "19124225364",
+    "project_id": "creditrecord-ac583",
+    "storage_bucket": "creditrecord-ac583.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19124225364:android:115471379b7a889c6734c1",
+        "android_client_info": {
+          "package_name": "com.example.credit_record"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19124225364-r0umcd5qtqhvq5dqsqq6d1j0lqhe6gt2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.credit_record",
+            "certificate_hash": "94ea32aefb93e938fddea87050facaf3f368ffc1"
+          }
+        },
+        {
+          "client_id": "19124225364-nf027r33uar69pv7bkm2ud2hni4qp9gt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq-_uPDgb2gSJeleu9NI4PeAOYU-35cS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19124225364-nf027r33uar69pv7bkm2ud2hni4qp9gt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

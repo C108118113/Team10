@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_background"
+    tools:context=".ui.calculate.CalculateFragment">
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/message_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0.5dip"
+            android:background="@color/input_box"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/text_view_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="課程名稱"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView31"
+                style="@style/text_view_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="屬性"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/text_view_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="學分"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/text_view_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="可修年級"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="大學國語文"
+                android:textColor="@color/frame"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="必修"
+                android:textColor="@color/frame"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="2"
+                android:textColor="@color/frame"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="1"
+                android:textColor="@color/frame"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="服務教育(一)"
+                android:textColor="@color/frame"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="必修"
+                android:textColor="@color/frame"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="0"
+                android:textColor="@color/frame"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="1"
+                android:textColor="@color/frame"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="實用英文(一)"
+                android:textColor="@color/frame"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="必修"
+                android:textColor="@color/frame"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="2"
+                android:textColor="@color/frame"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="1"
+                android:textColor="@color/frame"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="體育(一)"
+                android:textColor="@color/frame"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="必修"
+                android:textColor="@color/frame"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="0"
+                android:textColor="@color/frame"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="1"
+                android:textColor="@color/frame"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="服務教育(二)"
+                android:textColor="@color/frame"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="必修"
+                android:textColor="@color/frame"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/frame"
+                android:textSize="18dp"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="1"
+                android:textColor="@color/frame"
+                android:textSize="18dp" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

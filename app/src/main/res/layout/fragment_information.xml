@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_background"
+    tools:context=".ui.information.InformationFragment">
+
+    <ImageView
+        android:id="@+id/member_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/member_talk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/member_image">
+
+        <TextView
+            android:id="@+id/member_name"
+            style="@style/text_view_style"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:text="姓名" />
+
+        <EditText
+            android:id="@+id/member_textname"
+            style="@style/edit_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="14dp"
+            android:layout_toLeftOf="@+id/member_name"
+            android:layout_toEndOf="@+id/member_name"
+            android:hint="王小明"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout1">
+
+        <TextView
+            android:id="@+id/member_birthday"
+            style="@style/text_view_style"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:text="生日" />
+
+        <TextView
+            android:id="@+id/member_textbirthday"
+            style="@style/edit_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="14dp"
+            android:layout_toLeftOf="@+id/member_birthday"
+            android:layout_toEndOf="@+id/member_birthday"
+            android:paddingTop="11.2dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/member_btbirthday"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="4dp"
+            android:layout_toLeftOf="@+id/member_textbirthday"
+            android:onClick="onClickMemberBt"
+            android:text="@string/date"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/member_gender"
+            style="@style/text_view_style"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:text="性別" />
+
+        <RadioGroup
+            android:id="@+id/member_gender_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/member_gender"
+            android:layout_toEndOf="@id/member_gender"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/member_man"
+                android:layout_width="74dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="14dp"
+                android:background="@color/input_box"
+                android:onClick="onClickMemberBtn"
+                android:text="男"
+                android:textColor="@color/button_background"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/member_woman"
+                android:layout_width="74dp"
+                android:layout_height="50dp"
+                android:background="@color/input_box"
+                android:onClick="onClickMemberBtn"
+                android:text="女"
+                android:textColor="@color/button_background"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/member_other"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/input_box"
+                android:onClick="onClickMemberBtn"
+                android:text="其他"
+                android:textColor="@color/button_background"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+        <TextView
+            android:id="@+id/member_email"
+            style="@style/text_view_style"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:text="信箱" />
+
+        <EditText
+            android:id="@+id/member_textemail"
+            style="@style/edit_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="14dp"
+            android:layout_toLeftOf="@+id/member_email"
+            android:layout_toEndOf="@+id/member_email"
+            android:hint="@string/nav_header_subtitle"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4">
+
+        <TextView
+            android:id="@+id/member_phone"
+            style="@style/text_view_style"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:text="電話" />
+
+        <EditText
+            android:id="@+id/member_textphone"
+            style="@style/edit_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="14dp"
+            android:layout_toLeftOf="@+id/member_phone"
+            android:layout_toEndOf="@+id/member_phone"
+            android:hint="0912345678"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/member_save"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="@string/save"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/member_clear"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@+id/member_save"
+            android:text="@string/clear"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
